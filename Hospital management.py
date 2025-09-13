@@ -3,8 +3,7 @@ import tkinter as tk
 from tkinter import messagebox, ttk
 from datetime import datetime, timedelta
 
-# Abstraction: Abstract base class for hospital staff
-class Hospitalstaff(ABC):
+class Hospital(ABC):
     @abstractmethod
     def get_details(self):
         pass
@@ -264,4 +263,5 @@ class HospitalGUI:
 if __name__ == "__main__":
     root = tk.Tk()
     app = HospitalGUI(root)
+
     root.mainloop()
