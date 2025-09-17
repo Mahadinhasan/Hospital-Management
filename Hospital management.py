@@ -30,7 +30,7 @@ class Patient:
         return f"Patient: {self.__name}, ID: {self.__patient_id}, Age: {self.__age}, History: {self.__medical_history}"
 
 # Inheritance and Polymorphism
-class Doctor(Hospitalstaff):
+class Doctor(Hospital):
     def __init__(self, doctor_id, name, specialty):
         self.__doctor_id = doctor_id
         self.__name = name
